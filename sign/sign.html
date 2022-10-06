@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Toggle Login and SignUp Form with HTML,CSS and jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>RADITZ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  </head>
+<div class="container">
+      <div class="navbar">
+        <a href="../homepage.html"> <img src="../R.png" class="logo"></a>
+        <ul>
+          <li><a href="../homepage.html"> HOME </a> </li>
+            <li><a href="../discover/discover_Buttons/test.html"> DISCOVER </a> </li>
+            <li><a href="../contact/contact.html"> CONTACT </a> </li>
+            <li><a href="../About/about.html"> ABOUT US </a> </li>
+            <li><a href="../sign/sign.html"> LOGIN </a> </li>
+
+         </ul>
+        </div>
+      </div>
+      <div class="login-page">
+        <div class="form">
+          <form method="post" action="register.php" class="register-form">
+            <input type="text" name="username" placeholder="Name" class="word" />
+            <input type="password"name="password" placeholder="Password" class="word" />
+            <input type="phone" name="phone" placeholder="Phone Number" class="word"/>
+            <input type="text" name="mail" placeholder="Email Address" class="word"/>
+            <input type="submit" name="create" value="Create"   name="CREATE" class="bout">
+            <p class="message">Already registered? <a href="#">Login Here</a></p>
+          </form>
+          <form method="POST" action="sign.php" class="login-form">
+            <input type="text" name="username" placeholder="Username"  class="word"/>
+            <input type="password" name="password" placeholder="Password" class="word" /> 
+            <input type="submit" value="LOGIN"   name="LOGIN" class="bout">
+            <p  class="message">Not registered? <a href="#">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+      <script>
+        $('.message a').click(function(){
+         $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+      });
+      </script>
+       
+      </body>
+      </html>
+      

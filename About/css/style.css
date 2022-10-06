@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+.navbar{
+    width: 88%;
+    margin: auto;
+    padding: 15px 0;
+    display: flex;
+    align-items: top;
+    justify-content: space-between;	
+}
+.logo{
+position: relative;
+        top: 0px;
+        left: -100px;
+    width: 140px;
+    cursor: pointer;
+}
+.navbar ul li{ 
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:#5f5f5f;
+    font-size: 15px;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover:after{
+width: 100%;
+
+}
+
+.section{
+	width: 100%;
+	min-height: 100vh;
+	background-color: black;
+background:url(img.jpg);
+     	background-size: cover;
+	
+	
+}
+.design{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top: 100px;
+}
+.content-section{
+	float: left;
+	width: 55%;
+}
+.content-section .title{
+	ont-family: Geneva, Verdana, sans-serif;
+	text-transform: uppercase;
+	font-size: 28px;
+	color:white;
+}
+.content-section .title h1{
+  font-family:'Brush Script MT', cursive;;
+}
+.content-section .content h{
+
+	margin-top: 20px;
+	color:white;
+	font-size: 24px;
+font-family: Copperplate, Papyrus, fantasy;
+}
+.content-section .content p{
+	margin-top: 10px;
+	font-family: sans-serif;
+	font-size: 22px;
+	line-height: 1.5;
+	color:white;
+}
+
+.content-section .social{
+	margin: 40px 40px;
+}
+.content-section .social i{
+	color:red;
+	font-size: 30px;
+	padding:0px 10px;
+}
+.content-section .social i:hover{
+	color:white;;
+}
+@media screen and (max-width: 768px){
+	.container{
+	width: 80%;
+	display: block;
+	margin:auto;
+	padding-top:50px;
+}
+.content-section{
+	float:none;
+	width:100%;
+	display: block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:100%;
+	
+}
+
+.content-section .title{
+	text-align: center;
+	font-size: 19px;
+}
+
+.content-section .social{
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
